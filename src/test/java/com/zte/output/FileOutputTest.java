@@ -26,9 +26,8 @@ public class FileOutputTest {
         list.add(new Student(4,"zhao",40,400));
         list.add(new Student(3,"chen",30,300));
         sortedStudents = StudentSort.idSort(list,false);
-        fileOutput.setFileName("123");
+        fileOutput.setFileName("test");
     }
-
 
     @Test
     public void process() throws Exception {
