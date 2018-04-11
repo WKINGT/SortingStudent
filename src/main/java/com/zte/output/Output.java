@@ -1,6 +1,6 @@
-package com.zet.output;
+package com.zte.output;
 
-import com.zet.work.Student;
+import com.zte.work.Student;
 
 import java.util.List;
 

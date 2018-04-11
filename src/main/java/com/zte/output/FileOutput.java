@@ -1,7 +1,7 @@
-package com.zet.output;
+package com.zte.output;
 
 import com.csvreader.CsvWriter;
-import com.zet.work.Student;
+import com.zte.work.Student;
 
 import java.io.File;
 import java.io.IOException;

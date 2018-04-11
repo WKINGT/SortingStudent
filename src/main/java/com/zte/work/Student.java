@@ -1,4 +1,4 @@
-package com.zet.work;
+package com.zte.work;
 
 import java.io.Serializable;
 
@@ -7,6 +7,7 @@ import java.io.Serializable;
  * @Date: 2018/4/11 16:37
  * @Description:
  */
+
 public class Student implements Serializable {
     private int id;
     private String name;
