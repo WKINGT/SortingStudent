@@ -1,3 +1,5 @@
+package com.zet.work;
+
 import java.io.Serializable;
 
 /**
