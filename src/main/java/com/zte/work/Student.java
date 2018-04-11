@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * @Auther: TianW
  * @Date: 2018/4/11 16:37
- * @Description:
+ * @Description: 学生实体类
  */
 
 public class Student implements Serializable {
@@ -13,9 +13,6 @@ public class Student implements Serializable {
     private String name;
     private int age;
     private int score;
-
-    public Student() {
-    }
 
     public Student(int id, String name, int age, int score) {
         this.id = id;
@@ -58,6 +55,13 @@ public class Student implements Serializable {
 
     @Override
     public String toString(){
-        return "id:" + id + "\tname:" + name + "\tage:" + age +"\tscore:" + score;
+        return "id:" + this.getId() + "\tname:" + this.getName() + "\tage:" + this.getAge() +"\tscore:" + this.getScore();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Student student = (Student) obj;
+        return this.getId()==student.getId() && this.getName().equals(student.getName()) && this.getAge() == student.getAge()
+                && this.getScore() == student.getScore();
     }
 }

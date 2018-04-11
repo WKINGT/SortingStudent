@@ -16,7 +16,7 @@ import java.util.Scanner;
 /**
  * @Auther: TianW
  * @Date: 2018/4/11 17:30
- * @Description:
+ * @Description: 学生信息排序main方法
  */
 
 public class Main {

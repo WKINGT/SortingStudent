@@ -8,9 +8,15 @@ import java.util.List;
 /**
  * @Auther: TianW
  * @Date: 2018/4/11 16:55
- * @Description:
+ * @Description: 学生 id,age,score 的升降序排序
  */
 public class StudentSort {
+    /**
+     * 按学生id排序
+     * @param students
+     * @param isDesc 是否降序排列，true 降序，false 升序
+     * @return List<Student> 排序后的学生
+     */
     public static List<Student> idSort(List<Student> students,boolean isDesc){
         List<Student> copyStudents = ListUtil.deepCopy(students);
         Collections.sort(copyStudents, new Comparator<Student>() {
@@ -24,6 +30,13 @@ public class StudentSort {
         });
         return copyStudents;
     }
+
+    /**
+     * 按学生年龄排序
+     * @param students
+     * @param isDesc 是否降序排列，true 降序，false 升序
+     * @return List<Student> 排序后的学生
+     */
     public static List<Student> ageSort(List<Student> students,boolean isDesc){
         List<Student> copyStudents = ListUtil.deepCopy(students);
         Collections.sort(copyStudents, new Comparator<Student>() {
@@ -37,6 +50,13 @@ public class StudentSort {
         });
         return copyStudents;
     }
+
+    /**
+     * 按学生成绩排序
+     * @param students
+     * @param isDesc 是否降序排列，true 降序，false 升序
+     * @return List<Student> 排序后的学生
+     */
     public static List<Student> scoreSort(List<Student> students,boolean isDesc){
         List<Student> copyStudents = ListUtil.deepCopy(students);
         Collections.sort(copyStudents, new Comparator<Student>() {

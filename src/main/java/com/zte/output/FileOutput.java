@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @Auther: TianW
  * @Date: 2018/4/11 17:14
- * @Description:
+ * @Description: 排序结果输出到文件
  */
 public class FileOutput implements Output {
     private static String SAVE_FILE_PATH = System.getProperty("user.dir") + File.separator + "studentFile" + File.separator;
@@ -21,6 +21,10 @@ public class FileOutput implements Output {
         return fileName;
     }
 
+    /**
+     * 设置保存文件名
+     * @param fileName
+     */
     public void setFileName(String fileName) {
         this.fileName = fileName;
     }

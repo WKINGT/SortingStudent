@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @Auther: TianW
  * @Date: 2018/4/11 17:12
- * @Description:
+ * @Description: 排序结果输出到控制台
  */
 public class ConsoleOutput implements Output {
     @Override
